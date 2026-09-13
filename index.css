@@ -1,0 +1,154 @@
+:root {
+    --blanco: #FFFFFF;
+    --gris-claro: #F5F5F6;
+    --borde: rgba(24, 24, 27, 0.10);
+    --gris-texto: #71717A;
+    --tinta: #18181B;
+}
+
+nav {
+    background: var(--gris-claro);
+    border-bottom: 1px solid var(--borde);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--blanco);
+    color: var(--tinta);
+    font-family: "Inter", system-ui, sans-serif;
+}
+
+.contenedor {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 4px 130px;
+    margin: auto;
+    max-width: 1100px;
+    justify-content: space-between;
+}
+
+main {
+    position: relative;
+    margin: auto;
+    max-width: 1100px;
+    margin: 80px auto;
+    color: var(--tinta);
+}
+
+hr {
+    width: 130px;
+    margin: 0;
+}
+
+.habilidades {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 20px;
+    letter-spacing: 0.06em;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 350
+}
+
+.habilidades-h {
+    font-size: 18px;
+}
+
+.sep {
+    width: 5px;
+    height: 11px;
+    stroke: var(--acento);
+    stroke-width: 1;
+    stroke-linecap: round;
+    flex-shrink: 0;
+}
+
+.name-hugo {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 20px;
+    font-weight: 450;
+    letter-spacing: -0.015em;
+    color: var(--tinta);
+    text-decoration: none;
+    align-items: center;
+    position: relative;
+}
+
+.inicial {
+    font-family: "IBM Plex Mono", monospace;
+    font-style: italic;
+    color: var(--acento);
+    font-size: 0.9em;
+    font-size: 28px;
+}
+
+.enlaces {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+
+nav a {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    text-decoration: none;
+    color: var(--gris-texto);
+    display: inline-block;
+    padding-bottom: 4px;
+    transition: color .2s, border-color .2s;
+    position: relative;
+}
+
+nav a:hover {
+    color: var(--tinta);
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    border-radius: 35px;
+    background: var(--tinta);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s ease;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.letraGrande {
+    font-size: 80px;
+}
+
+.grandTitle {
+    font-family: "Playfair Display", Georgia, serif;
+    margin: 10px 0;
+    font-size: 50px;
+}
+
+.bloque-texto-introductorio{
+    display: flex;
+    border: rgb(141, 22, 22) solid 1px;
+}
+
+.textoDescriptivo {
+    padding: 150px 310px;
+    border: black solid 1px;
+}
+
+.marco-foto{
+    border: rgb(42, 179, 42) solid 1px;
+    padding: 50px 237px;
+}
+
