@@ -137,18 +137,22 @@ nav a:hover::after {
     font-size: 50px;
 }
 
-.bloque-texto-introductorio{
+.bloque-texto-introductorio {
     display: flex;
-    border: rgb(141, 22, 22) solid 1px;
+
 }
 
 .textoDescriptivo {
-    padding: 150px 310px;
-    border: black solid 1px;
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 18px ;
+    padding: 5px;
+    text-align: left;
+    flex: 1;
+    height: 350px;
+    max-height: 350px;
 }
 
-.marco-foto{
-    border: rgb(42, 179, 42) solid 1px;
+.marco-foto {
     padding: 50px 237px;
+    
 }
-
